@@ -1,0 +1,118 @@
+@media only screen and (max-width: 572px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 669px) {
+    .header__container {
+        padding-top: 70px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    #about #self-info {
+        width: 80%;
+        min-width: 0;
+    }
+    #about #profile-image {
+        width: 180px;
+        height: 180px;
+        aspect-ratio: auto 180 / 180;
+    }
+    .header__container {
+        padding-top: 120px;
+    }
+    .header__myname p:nth-child(2) {
+        padding-left: 20px;
+    }
+    #portfolio-container {
+        min-width: 0;
+        justify-content: center;
+    }
+    .portfolio-image-container {
+        width: 45%;
+    }
+    .contact-container {
+        min-width: 0;
+    }
+    .contact-container .contact-form-container {
+        margin-bottom: 5rem;
+    }
+    .contact-container .contact-form-container, .contact-container .address-container {
+        flex-basis: 80%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    body {
+        overflow-x: hidden;
+    }
+    .header__logo {
+        left: 40px;
+    }
+    .header__navlinks {
+        left: 50%;
+        top: 8vh;
+        height: 92vh;
+        /* background-color: #00BFFF; */
+        background-color: #B500ED;
+        /* background: linear-gradient(90deg, rgba(45,90,140,1) 20%, rgba(18,98,179,1) 100%); */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+    }
+    .header__navlinks li {
+        opacity: 0;
+    }
+    .hamburger {
+        right: 40px;
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .timeline {
+      width: 100%;
+      min-width: 0;
+    }
+    .timeline-divider {
+      height: 85%;
+      left: 5%;
+    }
+    .timeline-box {
+      margin: 2em;
+      width: 85%;
+    }
+    .timeline-box:nth-child(2n) {
+      left: 5%;
+    }
+  }
+
+  
+@media only screen and (max-width: 572px) {
+    .timeline {
+      font-size: 14px;
+      padding: 0 1rem;
+    }
+  }
+
+.nav-active{
+    transform: translateX(0%);
+    transition: transform 0.5s ease-in;
+}
+.nav-collaspe {
+    transform: translateX(100%);
+}
+
+@keyframes navLinksAnimation{
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
